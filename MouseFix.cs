@@ -4,10 +4,11 @@ using System;
 using System.Reflection;
 using UnityModManagerNet;
 
-namespace MouseFix {
-	internal static class Main
+namespace MouseFix
+{
+    internal static class Main
 	{
-		private static bool Load(UnityModManager.ModEntry modEntry)
+        private static bool Load(UnityModManager.ModEntry modEntry)
 		{
 			Main.mod = modEntry;
 			modEntry.OnToggle = new Func<UnityModManager.ModEntry, bool, bool>(Main.OnToggle);
