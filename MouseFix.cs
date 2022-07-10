@@ -27,7 +27,8 @@ namespace MouseFix
 
 		public static UnityModManager.ModEntry mod;
 	}
-	public class MouseFix {
+	public class MouseFix
+	{
 
 		[HarmonyPatch(typeof(IntroPlayer))]
 		[HarmonyPatch("Awake")]
